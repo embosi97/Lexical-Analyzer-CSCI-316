@@ -1,0 +1,10 @@
+
+This project works because of the "objectClass.java" class I created that allows for the creation of objects (objectClass objects) that contain a string "classname" (the name of the class/super class) and an integer "frequency" (the number of instances of a class within the data structure I devised in the Parser class (ArrayList familyList).  
+
+Obj class was modified to fill Parser's ArrayList (familyList) with the class and super classes of an Obj descendant class and increment an AtomicInteger every time Obj is invoked (to count the number of instances of class Obj)
+
+The setArg2 function in objectClass creates an ArrayList of these objectClass objects which is then sorted by the frequency (using Collections.sort) and uses a file writer to print onto the parameterized text file (provided by argsv[2]), thanks to the modified compareTo And toString functionA in the objectClass class. setArg2 is called in Parser.main with the Parser's ArrayList (the DS we were asked to make) and argsv[2] passed as parameters. 
+ 
+The Collections package is used to sort and find the frequency of classes within Parser's data structure.
+
+
